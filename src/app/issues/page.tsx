@@ -6,25 +6,26 @@ export default function Page() {
       <h6 className=" text-6xl">Issues With App router</h6>
       <div className="text-base">
         <p>
-          You'll have to wrap your page in a HOC to slow down the app router in
-          NextJS 13/14. The solution presented below will introduce more issues
-          to work through though such as:
+          You&apos;ll have to wrap your page in a HOC to slow down the app
+          router in NextJS 13/14. The solution presented below will introduce
+          more issues to work through though such as:
         </p>
         <ul className="flex flex-col gap-3 w-full list-disc px-2">
           <li>
             Suspense Boundaries from using loading.js file in app directory will
             fail to properly load in the children in effect making it so that
-            you can't use loading.js
+            you can&apos;t use loading.js
             <ul className="flex flex-col gap-3 px-4 list-disc">
               <li>
                 The solution will cause the page to re-render more but will
-                effectively provide the exit transitions you're looking for.
+                effectively provide the exit transitions you&apos;re looking
+                for.
               </li>
             </ul>
           </li>
           <li>
-            Page will be 'frozen' after it's loaded in, this puts strain on the
-            app router in its current state.
+            Page will be &apos;frozen&apos; after it&apos;s loaded in, this puts
+            strain on the app router in its current state.
           </li>
           <li className="font-semibold text-lg">
             Not support loading component, will make infinite loop
